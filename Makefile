@@ -28,13 +28,13 @@ view: us-view ru-view
 show: us-show ru-show
 
 ru-view:
-	tastenbrett -l ru
+	tastenbrett -l ru &
 
 us-view:
-	tastenbrett -l us
+	tastenbrett -l us &
 
 ru-show:
-	gkbd-keyboard-display -l ru
+	gkbd-keyboard-display -l ru &
 
 us-show:
-	gkbd-keyboard-display -l us
+	gkbd-keyboard-display -l us &

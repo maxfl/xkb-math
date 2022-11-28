@@ -11,12 +11,12 @@ xkb_symbols "winkeys" {
     include "ru(common)"
     name[Group1]= "Russian";
 
-    key <AE01> {[ 1,                 exclam,            U2081,        onesuperior   ]};
-    key <AE02> {[ 2,                 quotedbl,          U2082,        twosuperior   ]};
-    key <AE03> {[ 3,                 numerosign,        U2083,        threesuperior ]};
-    key <AE04> {[ 4,                 semicolon,         U2084,        foursuperior  ]};
+    key <AE01> {[ 1,                 exclam,            U2081,        onesuperior   ]}; // ₁, ¹
+    key <AE02> {[ 2,                 quotedbl,          U2082,        twosuperior   ]}; // ₂, ²
+    key <AE03> {[ 3,                 numerosign,        U2083,        threesuperior ]}; // ₃, ³
+    key <AE04> {[ 4,                 semicolon,         U2084,        foursuperior  ]}; // ₄, ⁴
     key <AE05> {[ 5,                 percent,           U2030,        fivesuperior  ]}; // ‰, ⁵
-    key <AE06> {[ 6,                 colon,             U2086,        sixsuperior   ]};
+    key <AE06> {[ 6,                 colon,             U207F,        sixsuperior   ]}; // ⁿ, ⁶
     key <AE07> {[ 7,                 question,          U00A7,        sevensuperior ]}; // §, ⁷
     key <AE08> {[ 8,                 asterisk,          U221E,        eightsuperior ]}; // ∞, ⁸
     key <AE09> {[ 9,                 parenleft,         U221D,        ninesuperior  ]}; // ∝, ⁹
@@ -35,15 +35,15 @@ xkb_symbols "winkeys" {
     key <AD11> {[ Cyrillic_ha,       Cyrillic_HA,       bracketright, braceright    ]};
     key <AD12> {[ Cyrillic_hardsign, Cyrillic_HARDSIGN, U2329,        U232A         ]}; // 〈, 〉
 
-    key <AC06> {[ Cyrillic_er,       Cyrillic_ER,       U2190         ]};           // ←
+    key <AC06> {[ Cyrillic_er,       Cyrillic_ER,       U2190         ]};           //  // ←
     key <AC07> {[ Cyrillic_o,        Cyrillic_O,        U2194,        U2195         ]}; // ↔, ↕
-    key <AC08> {[ Cyrillic_el,       Cyrillic_EL,       U21AA         ]};           // ↪
-    key <AC09> {[ Cyrillic_de,       Cyrillic_DE,       U2192         ]};           // →
-    key <AC10> {[ Cyrillic_zhe,      Cyrillic_ZHE,      U2022         ]};           // •
+    key <AC08> {[ Cyrillic_el,       Cyrillic_EL,       U21AA         ]};           //  // ↪
+    key <AC09> {[ Cyrillic_de,       Cyrillic_DE,       U2192         ]};           //  // →
+    key <AC10> {[ Cyrillic_zhe,      Cyrillic_ZHE,      U2022         ]};           //  // •
 
     key <AC02> {[ Cyrillic_yeru,     Cyrillic_YERU,     dollar        ]};
 
-    key <AB02> {[ Cyrillic_che,      Cyrillic_CHE,      U00D7         ]};           // x
+    key <AB02> {[ Cyrillic_che,      Cyrillic_CHE,      U00D7         ]};           //  // x
     key <AB03> {[ Cyrillic_es,       Cyrillic_ES,       U00B7,        U2300         ]}; // ·, ⌀
     key <AB06> {[ Cyrillic_te,       Cyrillic_TE,       numbersign    ]};
     key <AB08> {[ Cyrillic_be,       Cyrillic_BE,       U00AB,        U2264         ]}; // «, ≤
