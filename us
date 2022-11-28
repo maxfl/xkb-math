@@ -35,7 +35,7 @@ xkb_symbols "basic" {
     key <AC02> {[ s,            S,         U03C3, U2211 ]}; // σ, ∑ // Σ
     key <AC03> {[ d,            D,         U03B4, U0394 ]}; // δ, Δ
     key <AC04> {[ f,            F,         U03C6, U03D5 ]}; // φ, ϕ //⌀
-    key <AC05> {[ g,            G,         U2202 ]}; // ∂
+    key <AC05> {[ g,            G,         U2202, U0192 ]}; // ∂, ƒ
     key <AC06> {[ h,            H,         U210F, U2190]}; // ℏ, ←
     key <AC07> {[ j,            J,         U2194, U2195]}; // ↔, ↕
     key <AC08> {[ k,            K,         U21AA  ]}; // ↪
