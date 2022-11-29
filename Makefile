@@ -15,13 +15,19 @@ ru-diff:
 us-diff:
 	nvim -d /usr/share/X11/xkb/symbols/us us
 
+.PHONY: ru-diff-bak us-diff-bak
+ru-diff-bak:
+	nvim -d /usr/share/X11/xkb/symbols/ru.bak ru
+
+us-diff-bak:
+	nvim -d /usr/share/X11/xkb/symbols/us.bak us
+
 .PHONY: backup
 backup: \
 	/usr/share/X11/xkb/symbols/us.bak \
 	/usr/share/X11/xkb/symbols/ru.bak
 /usr/share/X11/xkb/symbols/%.bak: /usr/share/X11/xkb/symbols/%
 	cp -v $< $@
-
 
 .PHONY: view us-view ru-view
 view: us-view ru-view
