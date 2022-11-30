@@ -26,6 +26,8 @@ make patch
 
 ![This is an image](screenshot-ru.png)
 
+- AltR-у - combining acute accent
+
 # See also
 
 [autokey](https://github.com/autokey/autokey) — enter snippets and abbreviations

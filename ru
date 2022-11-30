@@ -28,6 +28,7 @@ xkb_symbols "winkeys" {
     key <BKSL> {[ backslash,         slash,             U2212,        U2213         ]}; // − minus, ∓
 
     key <TLDE> {[ Cyrillic_io,       Cyrillic_IO,       U207A,        U2248         ]}; // ⁺, ≈
+    key <AD03> {[ Cyrillic_u,        Cyrillic_U,        U0301         ]};           //  // acute accent (ó)
 
     key <AC11> {[ Cyrillic_e,        Cyrillic_E,        U201E,        U201C         ]};
     key <AD09> {[ Cyrillic_shcha,    Cyrillic_SHCHA,    U2218,        U00B0         ]}; // ∘, °
