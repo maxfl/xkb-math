@@ -3,44 +3,70 @@ FILES_REMOTE=\
 	/usr/share/X11/xkb/symbols/us \
 	/usr/share/X11/xkb/symbols/ru
 
+MODEL=microsoft4000
+GEOM=1700x600
+
+.ONESHELL:
+
+#
+# Patch system files
+#
 .PHONY: patch
 patch: $(FILES_REMOTE)
 /usr/share/X11/xkb/symbols/%: %
-	cp -v $< $@
+	sudo -L
+	sudo cp -v $< $@
 
+#
+# Diff with current system files
+#
 .PHONY: ru-diff us-diff
-ru-diff:
-	nvim -d /usr/share/X11/xkb/symbols/ru ru
+ru-diff us-diff: %-diff:
+	LAYOUT=$*
+	nvim -d /usr/share/X11/xkb/symbols/$$LAYOUT $$LAYOUT
 
-us-diff:
-	nvim -d /usr/share/X11/xkb/symbols/us us
-
+#
+# Diff with original files
+#
 .PHONY: ru-diff-bak us-diff-bak
-ru-diff-bak:
-	nvim -d /usr/share/X11/xkb/symbols/ru.bak ru
+ru-diff-bak us-diff-bak: %-diff-bak:
+	LAYOUT=$*
+	nvim -d /usr/share/X11/xkb/symbols/$$LAYOUT.bak $$LAYOUT
 
-us-diff-bak:
-	nvim -d /usr/share/X11/xkb/symbols/us.bak us
-
+#
+# Backup original files
+#
 .PHONY: backup
 backup: \
 	/usr/share/X11/xkb/symbols/us.bak \
 	/usr/share/X11/xkb/symbols/ru.bak
 /usr/share/X11/xkb/symbols/%.bak: /usr/share/X11/xkb/symbols/%
-	cp -v $< $@
+	sudo -L
+	sudo cp -v $< $@
 
+#
+# Save a screenshot,
+# needs tastenbrett, spectacle, both from KDE
+#
+.PHONY: png
+png: ru.png us.png
+%.png: /usr/share/X11/xkb/symbols/%
+	LAYOUT=$*
+	tastenbrett -l $$LAYOUT -m $(MODEL) --qwindowgeometry $(GEOM) &
+	spectacle --activewindow --no-decoration --delay 1000 --background --nonotify -o $@
+	kill %1
+
+#
+# View laouts with tastenbrett
+#
 .PHONY: view us-view ru-view
 view: us-view ru-view
+ru-view us-view: %-view: /usr/share/X11/xkb/symbols/%
+	tastenbrett -l $* -m $(MODEL) --qwindowgeometry $(GEOM) &
+
+#
+# Show laouts with gkbd-keyboard-display
+#
 show: us-show ru-show
-
-ru-view:
-	tastenbrett -l ru &
-
-us-view:
-	tastenbrett -l us &
-
-ru-show:
-	gkbd-keyboard-display -l ru &
-
-us-show:
-	gkbd-keyboard-display -l us &
+ru-show us-show: %-show: /usr/share/X11/xkb/symbols/%
+	gkbd-keyboard-display -l $* &
