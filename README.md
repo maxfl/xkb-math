@@ -16,7 +16,7 @@ make patch
 
 ### us 
 
-![This is an image](us.png)
+![This is an image](screenshot-us.png)
 
 - AltR-Shift-T - combining **t**ilde
 - AltR-Shift-B - combining **b**ar (overline)
@@ -24,4 +24,4 @@ make patch
 
 ### ru
 
-![This is an image](ru.png)
+![This is an image](screenshot-ru.png)

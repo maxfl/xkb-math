@@ -48,8 +48,8 @@ backup: \
 # needs tastenbrett, spectacle, both from KDE
 #
 .PHONY: png
-png: ru.png us.png
-%.png: /usr/share/X11/xkb/symbols/%
+png: screenshot-ru.png screenshot-us.png
+screenshot-%.png: /usr/share/X11/xkb/symbols/%
 	LAYOUT=$*
 	tastenbrett -l $$LAYOUT --qwindowgeometry $(GEOM) &
 	spectacle --activewindow --no-decoration --delay 1000 --background --nonotify -o $@
