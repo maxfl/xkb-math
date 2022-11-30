@@ -13,3 +13,15 @@ make patch
 ```
 
 ## Layouts
+
+### us 
+
+![This is an image](us.png)
+
+- AltR-Shift-T - combining **t**ilde
+- AltR-Shift-B - combining **b**ar (overline)
+- AltR-Shift-A - combining right **a**rrow
+
+### ru
+
+![This is an image](ru.png)
