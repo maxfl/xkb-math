@@ -3,7 +3,6 @@ FILES_REMOTE=\
 	/usr/share/X11/xkb/symbols/us \
 	/usr/share/X11/xkb/symbols/ru
 
-MODEL=microsoft4000
 GEOM=1700x600
 
 .ONESHELL:
@@ -52,7 +51,7 @@ backup: \
 png: ru.png us.png
 %.png: /usr/share/X11/xkb/symbols/%
 	LAYOUT=$*
-	tastenbrett -l $$LAYOUT -m $(MODEL) --qwindowgeometry $(GEOM) &
+	tastenbrett -l $$LAYOUT --qwindowgeometry $(GEOM) &
 	spectacle --activewindow --no-decoration --delay 1000 --background --nonotify -o $@
 	kill %1
 
@@ -62,7 +61,7 @@ png: ru.png us.png
 .PHONY: view us-view ru-view
 view: us-view ru-view
 ru-view us-view: %-view: /usr/share/X11/xkb/symbols/%
-	tastenbrett -l $* -m $(MODEL) --qwindowgeometry $(GEOM) &
+	tastenbrett -l $* --qwindowgeometry $(GEOM) &
 
 #
 # Show laouts with gkbd-keyboard-display
