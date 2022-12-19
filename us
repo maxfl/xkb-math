@@ -4,56 +4,59 @@ xkb_symbols "basic" {
 
     name[Group1]= "English (US)";
 
-    key <TLDE> {[ grave,        asciitilde,  U207A,        U2248         ]}; // ⁺, ≈
-    key <AE01> {[ 1,            exclam,      U2081,        onesuperior   ]}; // ₁, ¹
-    key <AE02> {[ 2,            at,          U2082,        twosuperior   ]}; // ₂, ²
-    key <AE03> {[ 3,            numbersign,  U2083,        threesuperior ]}; // ₃, ³
-    key <AE04> {[ 4,            dollar,      U2084,        foursuperior  ]}; // ₄, ⁴
-    key <AE05> {[ 5,            percent,     U2030,        fivesuperior  ]}; // ‰, ⁵
-    key <AE06> {[ 6,            asciicircum, U207F,        sixsuperior   ]}; // ⁿ, ⁶
-    key <AE07> {[ 7,            ampersand,   U00A7,        sevensuperior ]}; // §, ⁷
-    key <AE08> {[ 8,            asterisk,    U221E,        eightsuperior ]}; // ∞, ⁸
-    key <AE09> {[ 9,            parenleft,   U221D,        ninesuperior  ]}; // ∝, ⁹
-    key <AE10> {[ 0,            parenright,  U2080,        zerosuperior  ]}; // ₀, ⁰
-    key <AE11> {[ minus,        underscore,  U2014,        U207B         ]}; // M-dash, ⁻
-    key <AE12> {[ equal,        plus,        U2260,        U00B1         ]}; // ≠, ±
+    key <TLDE> {[ grave,        asciitilde,  U207A, U2248         ]}; // ⁺, ≈
+    key <AE01> {[ 1,            exclam,      U2081, onesuperior   ]}; // ₁, ¹
+    key <AE02> {[ 2,            at,          U2082, twosuperior   ]}; // ₂, ²
+    key <AE03> {[ 3,            numbersign,  U2083, threesuperior ]}; // ₃, ³
+    key <AE04> {[ 4,            dollar,      U2084, foursuperior  ]}; // ₄, ⁴
+    key <AE05> {[ 5,            percent,     U2030, fivesuperior  ]}; // ‰, ⁵
+    key <AE06> {[ 6,            asciicircum, U207F, sixsuperior   ]}; // ⁿ, ⁶
+    key <AE07> {[ 7,            ampersand,   U00A7, sevensuperior ]}; // §, ⁷
+    key <AE08> {[ 8,            asterisk,    U221E, eightsuperior ]}; // ∞, ⁸
+    key <AE09> {[ 9,            parenleft,   U221D, ninesuperior  ]}; // ∝, ⁹
+    key <AE10> {[ 0,            parenright,  U2080, zerosuperior  ]}; // ₀, ⁰
+    key <AE11> {[ minus,        underscore,  U2014, U207B         ]}; // M-dash, ⁻
+    key <AE12> {[ equal,        plus,        U2260, U00B1         ]}; // ≠, ±
 
-    key <AD01> {[ q,            Q,           U222B         ]};           //  // ∫
-    key <AD02> {[ w,            W,           U03C9,        U03A9         ]}; // ω, Ω
-    key <AD03> {[ e,            E,           U03B5,        U03B7         ]}; // ε, η
-    key <AD04> {[ r,            R,           U03C1,        U1D40         ]}; // ρ, (oᵀ) modifier capital letter T
-    key <AD05> {[ t,            T,           U03C4,        U0303         ]}; // τ, (õ) combining tilde above
-    key <AD06> {[ y,            Y,           U2020,        U2021         ]}; // †, ‡
-    key <AD07> {[ u,            U,           U03B8,        U03D1         ]}; // θ, ϑ
-    key <AD08> {[ i,            I,           U2208,        U220B         ]}; // ∈, ∋
-    key <AD09> {[ o,            O,           U2218,        U00B0         ]}; // ∘, °
-    key <AD10> {[ p,            P,           U03C0,        U220F         ]}; // π, ∏ // Π
-    key <AD11> {[ bracketleft,  braceleft,   U2329,        U207D         ]}; //  〈, ⁽
-    key <AD12> {[ bracketright, braceright,  U232A,        U207E         ]}; //  〉, ⁾
+    key <KPSU> {[ KP_Subtract,  KP_Subtract, U2213  ]};           // // ∓
+    key <KPAD> {[ KP_Add,       KP_Add,      U00B1  ]};           // // ±
 
-    key <AC01> {[ a,            A,           U03B1,        U20D7         ]}; // α, (o⃗) combining right arrow above
-    key <AC02> {[ s,            S,           U03C3,        U2211         ]}; // σ, ∑ // Σ
-    key <AC03> {[ d,            D,           U03B4,        U0394         ]}; // δ, Δ
-    key <AC04> {[ f,            F,           U03C6,        U03D5         ]}; // φ, ϕ //⌀
-    key <AC05> {[ g,            G,           U2202,        U0192         ]}; // ∂, ƒ
-    key <AC06> {[ h,            H,           U210F,        U2190]};      //  // ℏ, ←
-    key <AC07> {[ j,            J,           U2194,        U2195]};      //  // ↔, ↕
-    key <AC08> {[ k,            K,           U21AA         ]};           //  // ↪
-    key <AC09> {[ l,            L,           U03BB,        U2192         ]}; // λ, →
-    key <AC10> {[ semicolon,    colon,       U2022         ]};           //  // •
-    key <AC11> {[ apostrophe,   quotedbl,    U201C,        U201D         ]}; // “, ”
-    key <BKSL> {[ backslash,    bar,         U2212,        U2213         ]}; // − minus, ∓
+    key <AD01> {[ q,            Q,           U222B  ]};           //  // ∫
+    key <AD02> {[ w,            W,           U03C9, U03A9         ]}; // ω, Ω
+    key <AD03> {[ e,            E,           U03B5, U03B7         ]}; // ε, η
+    key <AD04> {[ r,            R,           U03C1, U1D40         ]}; // ρ, (oᵀ) modifier capital letter T
+    key <AD05> {[ t,            T,           U03C4, U0303         ]}; // τ, (õ) combining tilde above
+    key <AD06> {[ y,            Y,           U2020, U2021         ]}; // †, ‡
+    key <AD07> {[ u,            U,           U03B8, U03D1         ]}; // θ, ϑ
+    key <AD08> {[ i,            I,           U2208, U220B         ]}; // ∈, ∋
+    key <AD09> {[ o,            O,           U2218, U00B0         ]}; // ∘, °
+    key <AD10> {[ p,            P,           U03C0, U220F         ]}; // π, ∏ // Π
+    key <AD11> {[ bracketleft,  braceleft,   U2329, U207D         ]}; //  〈, ⁽
+    key <AD12> {[ bracketright, braceright,  U232A, U207E         ]}; //  〉, ⁾
 
-    key <AB01> {[ z,            Z,           U03C8         ]};           //  // ψ
-    key <AB02> {[ x,            X,           U03C7,        U00D7         ]}; // χ, x
-    key <AB03> {[ c,            C,           U00B7,        U2300         ]}; // ·, ⌀
-    key <AB04> {[ v,            V,           U2295,        U2297         ]}; // ⊕, ⊗
-    key <AB05> {[ b,            B,           U03B2,        U0305         ]}; // β, (o̅) combining overline
-    key <AB06> {[ n,            N,           U03BD,        U0001D4A9     ]}; // ν, 𝒩
-    key <AB07> {[ m,            M,           U03BC,        U00B5         ]}; // μ, micro µ
-    key <AB08> {[ comma,        less,        U2264,        U2272         ]}; // ≤, ≲
-    key <AB09> {[ period,       greater,     U2265,        U2273         ]}; // ≥, ≳
-    key <AB10> {[ slash,        question,    U221A         ]};           //  // √
+    key <AC01> {[ a,            A,           U03B1, U20D7         ]}; // α, (o⃗) combining right arrow above
+    key <AC02> {[ s,            S,           U03C3, U2211         ]}; // σ, ∑ // Σ
+    key <AC03> {[ d,            D,           U03B4, U0394         ]}; // δ, Δ
+    key <AC04> {[ f,            F,           U03C6, U03D5         ]}; // φ, ϕ //⌀
+    key <AC05> {[ g,            G,           U2202, U0192         ]}; // ∂, ƒ
+    key <AC06> {[ h,            H,           U210F, U2190]};      //  // ℏ, ←
+    key <AC07> {[ j,            J,           U2194, U2195]};      //  // ↔, ↕
+    key <AC08> {[ k,            K,           U21AA  ]};           //  // ↪
+    key <AC09> {[ l,            L,           U03BB, U2192         ]}; // λ, →
+    key <AC10> {[ semicolon,    colon,       U2022  ]};           //  // •
+    key <AC11> {[ apostrophe,   quotedbl,    U201C, U201D         ]}; // “, ”
+    key <BKSL> {[ backslash,    bar,         U2212, U2213         ]}; // − minus, ∓
+
+    key <AB01> {[ z,            Z,           U03C8  ]};           //  // ψ
+    key <AB02> {[ x,            X,           U03C7, U00D7         ]}; // χ, x
+    key <AB03> {[ c,            C,           U00B7, U2300         ]}; // ·, ⌀
+    key <AB04> {[ v,            V,           U2295, U2297         ]}; // ⊕, ⊗
+    key <AB05> {[ b,            B,           U03B2, U0305         ]}; // β, (o̅) combining overline
+    key <AB06> {[ n,            N,           U03BD, U0001D4A9     ]}; // ν, 𝒩
+    key <AB07> {[ m,            M,           U03BC, U00B5         ]}; // μ, micro µ
+    key <AB08> {[ comma,        less,        U2264, U2272         ]}; // ≤, ≲
+    key <AB09> {[ period,       greater,     U2265, U2273         ]}; // ≥, ≳
+    key <AB10> {[ slash,        question,    U221A  ]};           //  // √
 
     key <SPCE> {[ space,        space,       nobreakspace, nobreakspace  ]   };
 };
