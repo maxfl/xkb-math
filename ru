@@ -36,11 +36,11 @@ xkb_symbols "winkeys" {
     key <AD11> {[ Cyrillic_ha,       Cyrillic_HA,       bracketright, braceright    ]};
     key <AD12> {[ Cyrillic_hardsign, Cyrillic_HARDSIGN, U2329,        U232A         ]}; // 〈, 〉
 
-    key <AC06> {[ Cyrillic_er,       Cyrillic_ER,       U2190         ]};           //  // ←
-    key <AC07> {[ Cyrillic_o,        Cyrillic_O,        U2194,        U2195         ]}; // ↔, ↕
-    key <AC08> {[ Cyrillic_el,       Cyrillic_EL,       U21AA         ]};           //  // ↪
-    key <AC09> {[ Cyrillic_de,       Cyrillic_DE,       U2192         ]};           //  // →
-    key <AC10> {[ Cyrillic_zhe,      Cyrillic_ZHE,      U2022         ]};           //  // •
+    key <AC06> {[ Cyrillic_er,       Cyrillic_ER,       U2190,        U2190         ]}; // ←, ←
+    key <AC07> {[ Cyrillic_o,        Cyrillic_O,        U2193,        U2195         ]}; // ↓, ↕
+    key <AC08> {[ Cyrillic_el,       Cyrillic_EL,       U2191,        U2194         ]}; // ↑, ↔
+    key <AC09> {[ Cyrillic_de,       Cyrillic_DE,       U2192,        U2192         ]}; // →, →
+    key <AC10> {[ Cyrillic_zhe,      Cyrillic_ZHE,      U2022,        U21AA         ]}; //  •, ↪
 
     key <AC02> {[ Cyrillic_yeru,     Cyrillic_YERU,     dollar        ]};
 

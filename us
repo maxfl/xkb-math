@@ -39,11 +39,11 @@ xkb_symbols "basic" {
     key <AC03> {[ d,            D,           U03B4, U0394         ]}; // δ, Δ
     key <AC04> {[ f,            F,           U03C6, U03D5         ]}; // φ, ϕ //⌀
     key <AC05> {[ g,            G,           U2202, U0192         ]}; // ∂, ƒ
-    key <AC06> {[ h,            H,           U210F, U2190]};      //  // ℏ, ←
-    key <AC07> {[ j,            J,           U2194, U2195]};      //  // ↔, ↕
-    key <AC08> {[ k,            K,           U21AA  ]};           //  // ↪
+    key <AC06> {[ h,            H,           U210F, U2190         ]}; // ℏ, ←
+    key <AC07> {[ j,            J,           U2193, U2195         ]}; // ↓, ↕
+    key <AC08> {[ k,            K,           U2191, U2194         ]}; // ↑, ↔
     key <AC09> {[ l,            L,           U03BB, U2192         ]}; // λ, →
-    key <AC10> {[ semicolon,    colon,       U2022  ]};           //  // •
+    key <AC10> {[ semicolon,    colon,       U2022, U21AA         ]}; // •, ↪
     key <AC11> {[ apostrophe,   quotedbl,    U201C, U201D         ]}; // “, ”
     key <BKSL> {[ backslash,    bar,         U2212, U2213         ]}; // − minus, ∓
 
