@@ -44,7 +44,7 @@ xkb_symbols "winkeys" {
 
     key <AC02> {[ Cyrillic_yeru,     Cyrillic_YERU,     dollar        ]};
 
-    key <AB02> {[ Cyrillic_che,      Cyrillic_CHE,      U00D7         ]};           //  // x
+    key <AB02> {[ Cyrillic_che,      Cyrillic_CHE,      U03C7,        U00D7         ]}; // χ, x
     key <AB03> {[ Cyrillic_es,       Cyrillic_ES,       U00B7,        U2300         ]}; // ·, ⌀
     key <AB06> {[ Cyrillic_te,       Cyrillic_TE,       numbersign    ]};
     key <AB08> {[ Cyrillic_be,       Cyrillic_BE,       U00AB,        U2264         ]}; // «, ≤
