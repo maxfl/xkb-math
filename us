@@ -21,7 +21,7 @@ xkb_symbols "basic" {
     key <KPSU> {[ KP_Subtract,  KP_Subtract, U2213  ]};           // // ∓
     key <KPAD> {[ KP_Add,       KP_Add,      U00B1  ]};           // // ±
 
-    key <AD01> {[ q,            Q,           U222B  ]};           //  // ∫
+    key <AD01> {[ q,            Q,           U222B, U2202         ]}; // ∫, ∂
     key <AD02> {[ w,            W,           U03C9, U03A9         ]}; // ω, Ω
     key <AD03> {[ e,            E,           U03B5, U03B7         ]}; // ε, η
     key <AD04> {[ r,            R,           U03C1, U1D40         ]}; // ρ, (oᵀ) modifier capital letter T
@@ -38,7 +38,7 @@ xkb_symbols "basic" {
     key <AC02> {[ s,            S,           U03C3, U2211         ]}; // σ, ∑ // Σ
     key <AC03> {[ d,            D,           U03B4, U0394         ]}; // δ, Δ
     key <AC04> {[ f,            F,           U03C6, U03D5         ]}; // φ, ϕ //⌀
-    key <AC05> {[ g,            G,           U2202, U0192         ]}; // ∂, ƒ
+    key <AC05> {[ g,            G,           Greek_gamma, Greek_GAMMA ]}; // γ, Γ
     key <AC06> {[ h,            H,           U210F, U2190         ]}; // ℏ, ←
     key <AC07> {[ j,            J,           U2193, U2195         ]}; // ↓, ↕
     key <AC08> {[ k,            K,           U2191, U2194         ]}; // ↑, ↔
@@ -47,7 +47,7 @@ xkb_symbols "basic" {
     key <AC11> {[ apostrophe,   quotedbl,    U201C, U201D         ]}; // “, ”
     key <BKSL> {[ backslash,    bar,         U2212, U2213         ]}; // − minus, ∓
 
-    key <AB01> {[ z,            Z,           U03C8  ]};           //  // ψ
+    key <AB01> {[ z,            Z,           U03C8, U0192         ]}; // ψ, ƒ
     key <AB02> {[ x,            X,           U03C7, U00D7         ]}; // χ, x
     key <AB03> {[ c,            C,           U00B7, U2300         ]}; // ·, ⌀
     key <AB04> {[ v,            V,           U2295, U2297         ]}; // ⊕, ⊗
