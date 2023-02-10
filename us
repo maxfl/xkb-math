@@ -18,8 +18,19 @@ xkb_symbols "basic" {
     key <AE11> {[ minus,        underscore,  U2014, U207B         ]}; // M-dash, ⁻
     key <AE12> {[ equal,        plus,        U2260, U00B1         ]}; // ≠, ±
 
-    key <KPSU> {[ KP_Subtract,  KP_Subtract, U2213  ]};           // // ∓
-    key <KPAD> {[ KP_Add,       KP_Add,      U00B1  ]};           // // ±
+    key <KP7>  {[ KP_Home,      KP_7,        U1D65                ]}; // // ᵥ
+    key <KP8>  {[ KP_Up,        KP_8,        U1D67                ]}; // // ᵧ
+    key <KP9>  {[ KP_Prior,     KP_9                              ]}; // //
+
+    key <KP4>  {[ KP_Left,      KP_4,        U2099                ]}; // // ₙ
+    key <KP5>  {[ KP_Begin,     KP_5,        U209A                ]}; // // ₚ
+    key <KP6>  {[ KP_Right,     KP_6,        U2091                ]}; // // ₑ
+    key <KPSU> {[ KP_Subtract,  KP_Subtract, U2213                ]}; // // ∓
+
+    key <KP1>  {[ KP_End,       KP_1,        U1D62                ]}; // // ᵢ
+    key <KP2>  {[ KP_Down,      KP_2,        U2096                ]}; // // ₖ
+    key <KP3>  {[ KP_Next,      KP_3,        U2098                ]}; // // ₘ
+    key <KPAD> {[ KP_Add,       KP_Add,      U00B1                ]}; // // ±
 
     key <AD01> {[ q,            Q,           U222B, U2202         ]}; // ∫, ∂
     key <AD02> {[ w,            W,           U03C9, U03A9         ]}; // ω, Ω
@@ -30,12 +41,12 @@ xkb_symbols "basic" {
     key <AD07> {[ u,            U,           U03B8, U03D1         ]}; // θ, ϑ
     key <AD08> {[ i,            I,           U2208, U220B         ]}; // ∈, ∋
     key <AD09> {[ o,            O,           U2218, U00B0         ]}; // ∘, °
-    key <AD10> {[ p,            P,           U03C0, U220F         ]}; // π, ∏ // Π
+    key <AD10> {[ p,            P,           Greek_pi, Greek_PI   ]}; // π, Π
     key <AD11> {[ bracketleft,  braceleft,   U2329, U207D         ]}; //  〈, ⁽
     key <AD12> {[ bracketright, braceright,  U232A, U207E         ]}; //  〉, ⁾
 
     key <AC01> {[ a,            A,           U03B1, U20D7         ]}; // α, (o⃗) combining right arrow above
-    key <AC02> {[ s,            S,           U03C3, U2211         ]}; // σ, ∑ // Σ
+    key <AC02> {[ s,            S,           Greek_sigma, Greek_SIGMA ]}; // σ, Σ
     key <AC03> {[ d,            D,           U03B4, U0394         ]}; // δ, Δ
     key <AC04> {[ f,            F,           U03C6, U03D5         ]}; // φ, ϕ //⌀
     key <AC05> {[ g,            G,           Greek_gamma, Greek_GAMMA ]}; // γ, Γ
