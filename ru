@@ -27,6 +27,20 @@ xkb_symbols "winkeys" {
     key <AB10> {[ period,            comma,             U2272,        U2273         ]}; // ≲, ≳
     key <BKSL> {[ backslash,         slash,             U2212,        U2213         ]}; // − minus, ∓
 
+    key <KP7>  {[ KP_Home,      KP_7,        U1D65, U1D65         ]}; // // ᵥ
+    key <KP8>  {[ KP_Up,        KP_8,        U1D67, U1D67         ]}; // // ᵧ
+    key <KP9>  {[ KP_Prior,     KP_9                              ]}; // //
+
+    key <KP4>  {[ KP_Left,      KP_4,        U2099, U2099         ]}; // // ₙ
+    key <KP5>  {[ KP_Begin,     KP_5,        U209A, U209A         ]}; // // ₚ
+    key <KP6>  {[ KP_Right,     KP_6,        U2091, U2091         ]}; // // ₑ
+    key <KPSU> {[ KP_Subtract,  KP_Subtract, U2213, U2213         ]}; // // ∓
+
+    key <KP1>  {[ KP_End,       KP_1,        U1D62, U1D62         ]}; // // ᵢ
+    key <KP2>  {[ KP_Down,      KP_2,        U2096, U2096         ]}; // // ₖ
+    key <KP3>  {[ KP_Next,      KP_3,        U2098, U2098         ]}; // // ₘ
+    key <KPAD> {[ KP_Add,       KP_Add,      U00B1, U00B1         ]}; // // ±
+
     key <TLDE> {[ Cyrillic_io,       Cyrillic_IO,       U207A,        U2248         ]}; // ⁺, ≈
     key <AD03> {[ Cyrillic_u,        Cyrillic_U,        U0301         ]};           //  // acute accent (ó)
 
