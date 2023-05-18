@@ -14,8 +14,8 @@ MODEL=microsoftelite
 .PHONY: patch
 patch: $(FILES_REMOTE)
 /usr/share/X11/xkb/symbols/%: %
-	sudo -L
-	sudo cp -v $< $@
+	doas -L
+	doas cp -v $< $@
 
 #
 # Diff with current system files
@@ -41,8 +41,8 @@ backup: \
 	/usr/share/X11/xkb/symbols/us.bak \
 	/usr/share/X11/xkb/symbols/ru.bak
 /usr/share/X11/xkb/symbols/%.bak: /usr/share/X11/xkb/symbols/%
-	sudo -L
-	sudo cp -v $< $@
+	doas -L
+	doas cp -v $< $@
 
 #
 # Save a screenshot,
