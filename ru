@@ -56,7 +56,8 @@ xkb_symbols "winkeys" {
     key <AC09> {[ Cyrillic_de,       Cyrillic_DE,       U2192,        U2192         ]}; // →, →
     key <AC10> {[ Cyrillic_zhe,      Cyrillic_ZHE,      U2022,        U21AA         ]}; //  •, ↪
 
-    key <AC02> {[ Cyrillic_yeru,     Cyrillic_YERU,     dollar        ]};
+    key <AC01> {[ Cyrillic_ef,       Cyrillic_EF,       Greek_phi,    Greek_PHI     ]}; // φ, Φ
+    key <AC02> {[ Cyrillic_yeru,     Cyrillic_YERU,     Greek_sigma,  dollar        ]}; // σ, $
 
     key <AB02> {[ Cyrillic_che,      Cyrillic_CHE,      U03C7,        U00D7         ]}; // χ, x
     key <AB03> {[ Cyrillic_es,       Cyrillic_ES,       U00B7,        U2300         ]}; // ·, ⌀
