@@ -60,7 +60,8 @@ xkb_symbols "winkeys" {
     key <AC01> {[ Cyrillic_ef,       Cyrillic_EF,       Greek_phi,    Greek_PHI     ]}; // φ, Φ
     key <AC02> {[ Cyrillic_yeru,     Cyrillic_YERU,     Greek_sigma,  dollar        ]}; // σ, $
 
-    key <AB02> {[ Cyrillic_che,      Cyrillic_CHE,      U03C7,        U00D7         ]}; // χ, x
+    key <AB01> {[ Cyrillic_ya,       Cyrillic_YA,       Greek_xi  ]}; // ξ
+    key <AB02> {[ Cyrillic_che,      Cyrillic_CHE,      Greek_chi,    U00D7         ]}; // χ, x
     key <AB03> {[ Cyrillic_es,       Cyrillic_ES,       U00B7,        U2300         ]}; // ·, ⌀
     key <AB06> {[ Cyrillic_te,       Cyrillic_TE,       numbersign    ]};
     key <AB08> {[ Cyrillic_be,       Cyrillic_BE,       U00AB,        U2264         ]}; // «, ≤
