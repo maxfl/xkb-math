@@ -83,7 +83,7 @@ xkb_symbols "basic" {
     key <AB09> {[ period,       greater,     U2265, U2273         ]}; // ≥, ≳
     key <AB10> {[ slash,        question,    U221A  ]};           //  // √
 
-    key <SPCE> {[ space,        space,       nobreakspace, nobreakspace  ]   };
+    key <SPCE> {[ space,        space,       nobreakspace, U202F  ]   }; // nobreak space, narrow nobreak space
 };
 
 partial alphanumeric_keys

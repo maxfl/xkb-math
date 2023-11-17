@@ -67,7 +67,7 @@ xkb_symbols "winkeys" {
     key <AB08> {[ Cyrillic_be,       Cyrillic_BE,       U00AB,        U2264         ]}; // «, ≤
     key <AB09> {[ Cyrillic_yu,       Cyrillic_YU,       U00BB,        U2265         ]}; // », ≥
 
-    key <SPCE> {[ space,             space,             nobreakspace, nobreakspace  ]};
+    key <PCE> {[ space,        space,       nobreakspace, U202F  ]   }; // nobreak space, narrow nobreak space
 
     include "level3(ralt_switch)"
 };
