@@ -12,38 +12,50 @@ xkb_symbols "winkeys" {
     include "ru(common)"
     name[Group1]= "Russian";
 
+    key <TLDE> {[ Cyrillic_io,       Cyrillic_IO,  U00B1, U2213                     ]}; // ±, ∓
     key <AE01> {[ 1,                 exclam,            U2081,        onesuperior   ]}; // ₁, ¹
     key <AE02> {[ 2,                 quotedbl,          U2082,        twosuperior   ]}; // ₂, ²
     key <AE03> {[ 3,                 numerosign,        U2083,        threesuperior ]}; // ₃, ³
     key <AE04> {[ 4,                 semicolon,         U2084,        foursuperior  ]}; // ₄, ⁴
-    key <AE05> {[ 5,                 percent,           U2030,        fivesuperior  ]}; // ‰, ⁵
-    key <AE06> {[ 6,                 colon,             U207F,        sixsuperior   ]}; // ⁿ, ⁶
-    key <AE07> {[ 7,                 question,          U00A7,        sevensuperior ]}; // §, ⁷
-    key <AE08> {[ 8,                 asterisk,          U221E,        eightsuperior ]}; // ∞, ⁸
-    key <AE09> {[ 9,                 parenleft,         U221D,        ninesuperior  ]}; // ∝, ⁹
+    key <AE05> {[ 5,                 percent,           U2085, fivesuperior         ]}; // ₅, ⁵
+    key <AE06> {[ 6,                 colon,             U2086, sixsuperior          ]}; // ₆, ⁶
+    key <AE07> {[ 7,                 question,          U2087, sevensuperior        ]}; // ₇, ⁷
+    key <AE08> {[ 8,                 asterisk,          U2088, eightsuperior        ]}; // ₈, ⁸
+    key <AE09> {[ 9,                 parenleft,         U2089, ninesuperior         ]}; // ₉, ⁹
     key <AE10> {[ 0,                 parenright,        U2080,        zerosuperior  ]}; // ₀, ⁰
     key <AE11> {[ minus,             underscore,        U2014,        U207B         ]}; // M-dash, ⁻
-    key <AE12> {[ equal,             plus,              U2260,        U00B1         ]}; // ≠, ±
+    key <AE12> {[ equal,        plus,        U2260, U207A             ]}; // ≠, ⁺
 
-    key <AB10> {[ period,            comma,             U2272,        U2273         ]}; // ≲, ≳
-    key <BKSL> {[ backslash,         slash,             U2212,        U2213         ]}; // − minus, ∓
+    key <KP7>  {[ KP_Home,      KP_7,        U1D65, U1D65                           ]}; // // ᵥ
+    key <KP8>  {[ KP_Up,        KP_8,        U1D67, U1D67                           ]}; // // ᵧ
+    key <KP9>  {[ KP_Prior,     KP_9                                                ]}; // //
 
-    key <KP7>  {[ KP_Home,      KP_7,        U1D65, U1D65         ]}; // // ᵥ
-    key <KP8>  {[ KP_Up,        KP_8,        U1D67, U1D67         ]}; // // ᵧ
-    key <KP9>  {[ KP_Prior,     KP_9                              ]}; // //
+    key <KP4>  {[ KP_Left,      KP_4,        U2099, U2099                           ]}; // // ₙ
+    key <KP5>  {[ KP_Begin,     KP_5,        U209A, U209A                           ]}; // // ₚ
+    key <KP6>  {[ KP_Right,     KP_6,        U2091, U2091                           ]}; // // ₑ
+    key <KPSU> {[ KP_Subtract,  KP_Subtract, U2213, U2213                           ]}; // // ∓
 
-    key <KP4>  {[ KP_Left,      KP_4,        U2099, U2099         ]}; // // ₙ
-    key <KP5>  {[ KP_Begin,     KP_5,        U209A, U209A         ]}; // // ₚ
-    key <KP6>  {[ KP_Right,     KP_6,        U2091, U2091         ]}; // // ₑ
-    key <KPSU> {[ KP_Subtract,  KP_Subtract, U2213, U2213         ]}; // // ∓
+    key <KP1>  {[ KP_End,       KP_1,        U1D62, U1D62                           ]}; // // ᵢ
+    key <KP2>  {[ KP_Down,      KP_2,        U2096, U2096                           ]}; // // ₖ
+    key <KP3>  {[ KP_Next,      KP_3,        U2098, U2098                           ]}; // // ₘ
+    key <KPAD> {[ KP_Add,       KP_Add,      U00B1, U00B1                           ]}; // // ±
 
-    key <KP1>  {[ KP_End,       KP_1,        U1D62, U1D62         ]}; // // ᵢ
-    key <KP2>  {[ KP_Down,      KP_2,        U2096, U2096         ]}; // // ₖ
-    key <KP3>  {[ KP_Next,      KP_3,        U2098, U2098         ]}; // // ₘ
-    key <KPAD> {[ KP_Add,       KP_Add,      U00B1, U00B1         ]}; // // ±
+    // TODO: ᵣₛₜᵧⱼ
+    key <FK01> {[  F1,  F1, U1D62                                     ]}; // ᵢ (i-sub)
+    key <FK02> {[  F2,  F2, U2096                                     ]}; // ₖ (k-sub)
+    key <FK03> {[  F3,  F3, U2081                                     ]}; // ₁ (l-sub)
+    key <FK04> {[  F4,  F4, U2098, U207F                              ]}; // ₘ (m-sub), ⁿ (n-sup)
+    key <FK05> {[  F5,  F5, U2099, U2030                              ]}; // ₙ (n-sub), ‰
+    key <FK06> {[  F6,  F6                                            ]};
+    key <FK07> {[  F7,  F7, U00A7                                     ]}; // §
+    key <FK08> {[  F8,  F8, infinity, U221D                           ]}; // ∞, ∝
+    key <FK09> {[  F9,  F9                                            ]};
+    key <FK10> {[ F10, F10                                            ]};
+    key <FK11> {[ F11, F11, U2212                                     ]}; // − (minus)
+    key <FK12> {[ F12, F12, U2248                                     ]}; // ≈
 
-    key <TLDE> {[ Cyrillic_io,       Cyrillic_IO,       U207A,        U2248         ]}; // ⁺, ≈
-    key <AD03> {[ Cyrillic_u,        Cyrillic_U,        U0301         ]};           //  // acute accent (ó)
+    // TOP row
+    key <AD03> {[ Cyrillic_u,        Cyrillic_U,        U0301                       ]};           //  // acute accent (ó)
 
     key <AC11> {[ Cyrillic_e,        Cyrillic_E,        U201E,        U201C         ]};
     key <AD09> {[ Cyrillic_shcha,    Cyrillic_SHCHA,    U2218,        U00B0         ]}; // ∘, °
@@ -57,17 +69,23 @@ xkb_symbols "winkeys" {
     key <AC09> {[ Cyrillic_de,       Cyrillic_DE,       U2192,        U2192         ]}; // →, →
     key <AC10> {[ Cyrillic_zhe,      Cyrillic_ZHE,      U2022,        U21AA         ]}; //  •, ↪
 
+    // Middle row
     key <AC01> {[ Cyrillic_ef,       Cyrillic_EF,       Greek_phi,    Greek_PHI     ]}; // φ, Φ
     key <AC02> {[ Cyrillic_yeru,     Cyrillic_YERU,     Greek_sigma,  dollar        ]}; // σ, $
 
-    key <AB01> {[ Cyrillic_ya,       Cyrillic_YA,       Greek_xi  ]}; // ξ
+    // BOTTOM row
+    key <AB01> {[ Cyrillic_ya,       Cyrillic_YA,       Greek_xi                    ]}; // ξ
     key <AB02> {[ Cyrillic_che,      Cyrillic_CHE,      Greek_chi,    U00D7         ]}; // χ, x
     key <AB03> {[ Cyrillic_es,       Cyrillic_ES,       U00B7,        U2300         ]}; // ·, ⌀
-    key <AB06> {[ Cyrillic_te,       Cyrillic_TE,       numbersign    ]};
+    key <AB06> {[ Cyrillic_te,       Cyrillic_TE,       numbersign                  ]};
     key <AB08> {[ Cyrillic_be,       Cyrillic_BE,       U00AB,        U2264         ]}; // «, ≤
     key <AB09> {[ Cyrillic_yu,       Cyrillic_YU,       U00BB,        U2265         ]}; // », ≥
 
-    key <PCE> {[ space,        space,       nobreakspace, U202F  ]   }; // nobreak space, narrow nobreak space
+    key <AB10> {[ period,            comma,             U2272,        U2273         ]}; // ≲, ≳
+    key <BKSL> {[ backslash,         slash                                          ]}; //
+
+
+    key <SPCE> {[ space,        space,       nobreakspace, U202F  ]   }; // nobreak space, narrow nobreak space
 
     include "level3(ralt_switch)"
 };
@@ -328,7 +346,7 @@ xkb_symbols "phonetic_YAZHERTY" {
     include "ru(phonetic_winkeys)"
     name[Group1]= "Russian (phonetic, YAZHERTY)";
     key	<LatW> {	[     Cyrillic_zhe,     Cyrillic_ZHE	]	};
-    key	<LatV> {	[    Cyrillic_ve,    Cyrillic_VE	]	}; 
+    key	<LatV> {	[    Cyrillic_ve,    Cyrillic_VE	]	};
 };
 
 
@@ -1054,7 +1072,7 @@ xkb_symbols "prxn" {
     key <AD01> { [ Cyrillic_shorti,   Cyrillic_SHORTI,                 Cyrillic_je,            Cyrillic_JE,     U04CF,    U04C0,                                  U030A,    U0325 ] };	                             // й Й ј Ј ӏ Ӏ, Combining Ring Above and Below
     key <AD02> { [      Cyrillic_tse,    Cyrillic_TSE,                       U04B5,                  U04B4,     Cyrillic_u_straight, Cyrillic_U_straight,         U051B,    U051A ] };                               // ц Ц ҵ Ҵ ү Ү ԛ Ԛ
     key <AD03> { [        Cyrillic_u,      Cyrillic_U,         Byelorussian_shortu,    Byelorussian_SHORTU,     Cyrillic_u_straight_bar,Cyrillic_U_straight_bar,  Byelorussian_shortu, Byelorussian_SHORTU ] };      // у У ў Ў ұ Ұ ў Ў
-    key <AD04> { [       Cyrillic_ka,     Cyrillic_KA,       Cyrillic_ka_descender,  Cyrillic_KA_descender,     U049F,    U049E,                                  U046F,    U046E ] };                               // к К Қ қ ҟ Ҟ ѯ Ѯ 
+    key <AD04> { [       Cyrillic_ka,     Cyrillic_KA,       Cyrillic_ka_descender,  Cyrillic_KA_descender,     U049F,    U049E,                                  U046F,    U046E ] };                               // к К Қ қ ҟ Ҟ ѯ Ѯ
     key <AD05> { [     Cyrillic_ie,       Cyrillic_IE,                 Cyrillic_io,            Cyrillic_IO,     U0463,    U0462,                                  UA653,    UA652 ] };	                             // е Е ё Ё ѣ Ѣ ꙓ Ꙓ
     key <AD06> { [     Cyrillic_en,       Cyrillic_EN,                Cyrillic_nje,           Cyrillic_NJE,     Cyrillic_en_descender, Cyrillic_EN_descender,     U04C8,    U04C7 ] };	                             // н Н њ Њ ң Ң ӈ Ӈ
     key <AD07> { [      Cyrillic_ghe,    Cyrillic_GHE, Ukrainian_ghe_with_upturn,Ukrainian_GHE_WITH_UPTURN,     Cyrillic_ghe_bar, Cyrillic_GHE_bar,               U04F7,    U04F6 ] };                               // г Г Ґ ґ ғ Ғ ӷ Ӷ
@@ -1126,7 +1144,7 @@ xkb_symbols "unipunct" {
 
  include "us(basic)"
  name[Group1]= "Russian (with US punctuation)";
- 
+
  // Единственный символ, который отсутствует на US раскладке - №
  key <AE03> { [ 3,             numbersign, 3, numerosign  ] };
 
