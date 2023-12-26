@@ -70,7 +70,7 @@ xkb_symbols "basic" {
     key <AC06> {[ h,            H,           U210F, U2190             ]}; // ℏ, ←
     key <AC07> {[ j,            J,           U2193, U2195             ]}; // ↓, ↕
     key <AC08> {[ k,            K,           U2191, U2194             ]}; // ↑, ↔
-    key <AC09> {[ l,            L,           U03BB, U2192             ]}; // λ, →
+    key <AC09> {[ l,            L,           U03BB, U039B             ]}; // λ, Λ
     key <AC10> {[ semicolon,    colon,       U2022, U21AA             ]}; // •, ↪
     key <AC11> {[ apostrophe,   quotedbl,    U201C, U201D             ]}; // “, ”
     key <BKSL> {[ backslash,    bar                                   ]}; //
