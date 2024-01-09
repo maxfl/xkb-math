@@ -64,7 +64,7 @@ xkb_symbols "basic" {
     // Middle row
     key <AC01> {[ a,            A,           U03B1, U20D7             ]}; // α, (o⃗) combining right arrow above
     key <AC02> {[ s,            S,           Greek_sigma, Greek_SIGMA ]}; // σ, Σ
-    key <AC03> {[ d,            D,           U03B3, U0394             ]}; // δ, Δ
+    key <AC03> {[ d,            D,           Greek_delta, Greek_DELTA ]}; // δ, Δ
     key <AC04> {[ f,            F,           U03C6, U03D5             ]}; // φ, ϕ //⌀
     key <AC05> {[ g,            G,           Greek_gamma, Greek_GAMMA ]}; // γ, Γ
     key <AC06> {[ h,            H,           U210F, U2190             ]}; // ℏ, ←
