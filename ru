@@ -40,6 +40,8 @@ xkb_symbols "winkeys" {
     key <KP3>  {[ KP_Next,      KP_3,        U2098, U2098                           ]}; // // ₘ
     key <KPAD> {[ KP_Add,       KP_Add,      U00B1, U00B1                           ]}; // // ±
 
+    key <KPDL> { [ KP_Delete,   period ] };
+
     // TODO: ᵣₛₜᵧⱼ
     key <FK01> {[  F1,  F1, U1D62                                     ]}; // ᵢ (i-sub)
     key <FK02> {[  F2,  F2, U2096                                     ]}; // ₖ (k-sub)
