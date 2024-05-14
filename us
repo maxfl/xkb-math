@@ -76,7 +76,7 @@ xkb_symbols "basic" {
     key <BKSL> {[ backslash,    bar                                   ]}; //
 
     // BOTTOM row
-    key <AB01> {[ z,            Z,           U03C8, U0192             ]}; // ψ, ƒ
+    key <AB01> {[ z,            Z,           Greek_zeta, U03C8        ]}; // ζ, ψ
     key <AB02> {[ x,            X,           U03C7, U00D7             ]}; // χ, x
     key <AB03> {[ c,            C,           U00B7, U2300             ]}; // ·, ⌀
     key <AB04> {[ v,            V,           U2295, U2297             ]}; // ⊕, ⊗
